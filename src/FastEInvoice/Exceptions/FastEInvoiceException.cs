@@ -55,7 +55,7 @@ public class FastEInvoiceException : Exception
     /// <returns>FastEInvoiceException</returns>
     public static FastEInvoiceException FromApiResponse(ApiResponse response)
     {
-        var description = ErrorCode.GetDescription(response.Code);
+        var description = Models.Common.ErrorCode.GetDescription(response.Code);
         var message = string.IsNullOrWhiteSpace(response.Message)
             ? description
             : $"{description} - {response.Message}";
@@ -71,7 +71,7 @@ public class FastEInvoiceException : Exception
     /// <returns>FastEInvoiceException</returns>
     public static FastEInvoiceException FromApiResponse<T>(ApiResponse<T> response)
     {
-        var description = ErrorCode.GetDescription(response.Code);
+        var description = Models.Common.ErrorCode.GetDescription(response.Code);
         var message = string.IsNullOrWhiteSpace(response.Message)
             ? description
             : $"{description} - {response.Message}";
