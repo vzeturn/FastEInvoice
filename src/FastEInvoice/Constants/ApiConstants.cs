@@ -13,7 +13,7 @@ public static class ApiConstants
         /// <summary>
         /// Push invoice data to portal (Method 311)
         /// </summary>
-        public const string PushInvoice = "311";
+        public const string PushInvoice = "7311";
 
         /// <summary>
         /// Push delivery note data to portal (Method 318)

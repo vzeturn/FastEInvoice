@@ -85,7 +85,7 @@ public class InvoiceMaster
     /// Must be declared in portal
     /// </summary>
     [MaxLength(32)]
-    public string? PaymentMethod { get; set; }
+    public string? PaymentMethod { get; set; } = "TC";
 
     /// <summary>
     /// Bank account number (max 30 characters)
@@ -108,7 +108,7 @@ public class InvoiceMaster
     /// <summary>
     /// Currency code (3 characters)
     /// </summary>
-    public string? Currency { get; set; }
+    public string? Currency { get; set; } = "VND";
 
     /// <summary>
     /// Exchange rate
